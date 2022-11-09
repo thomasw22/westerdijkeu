@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thomas Westerdijk</title>
+    <meta name="description" content="De officiële website van westerdijk.eu. Voor al uw websites en webapps">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Thomas Westerdijk">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="breakpoint.css">
+    <link href="tooltip.css" rel="stylesheet">
+    <link href="pattern.png?v=2" rel="icon">
+</head>
+  
+<body>
+    <div class="left">
+        <div class="content">
+            <div class="top">
+                <!-- <img src="thomas logo.jpg" alt="logo"> -->
+                <h2>Westerdijk.eu</h2>
+            </div>
+            <div class="intro">
+                <h1>Thomas Westerdijk</h1>
+                <h2>Voor al uw websites en apps</h2>
+            </div>
+            <div class="qlts">
+                <!-- <h1>Wat ik kan</h1> -->
+                <div class="qlty-wrapper">
+
+                    <div class="qlty">
+                        <h3>Volledige webshop</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="qlty">
+                        <span data-tooltip="Klantensysteem" data-flow="right">
+                            <h3>CRM</h3>
+                            <i class="fas fa-server"></i>
+                        </span>
+                    </div>
+                    <div class="qlty">
+                        <h3>Ideal integratie</h3>
+                        <i class="fab fa-ideal"></i>
+                    </div>
+                    <div class="qlty">
+                        <h3>Responsive design</h3>
+                        <i class="fas fa-crop-alt"></i>
+                    </div>
+                    <div class="qlty">
+                        <h3>Animaties</h3>
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="qlty">
+                        <h3>Op maat gemaakt</h3>
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="qlty">
+                        <h3>Geautomatiseerde E-mails</h3>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="qlty">
+                        <h3>Geïntegreerd contactformulier</h3>
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick-showcase">
+                <a href="#showcase">Bekijk mijn portfolio!</a>
+            </div>
+
+            <!-- <div class="expl block" data-aos="fade-up">
+                <h2>Wat ik doe</h2>
+                <p>
+                    Ik programmer al mijn websites helemaal zelf. Ik maak hierbij gebruik van een programmeertalen die ervoor zorgen datik volledige controle heb over wat erop komt te staan, waar en in welke vorm.<br /><br />
+                    Ook maak ik alles compleet responsive, zodat de website op alle schermen toegangelijk is.<br /><br />
+                    Ik kan ook betaalmethoden toevoegen voor bijvoorbeeld een webshop, inschrijf of donatie systeem.<br /><br />
+                    Ik bied ook de mogelijkheid gegevens op te slaan in een database (ingevuld in een contactformulier of op een webshop) en die te verwerken, of zodat mensen zich kunnen inschrijven voor een nieuwsbrief.
+                </p>
+            </div> -->
+            <!-- <div class="arrow-down"><i class="fas fa-arrow-down"></i></div> -->
+            <div class="abt block">
+                <h2>Over mij</h2>
+                <p>
+                    Hallo, ik ben Thomas Westerdijk, <span id="age">x</span> jaar oud en kom uit Middelburg. In mijn vrije tijd houd ik mij veel bezig met ict, en dan vooral met websites en webapps. Ondertussen is dit al meer geworden dan een hobby, waar ik superblij mee ben.<br />Ik programmeer al mijn websites helemaal vanaf scratch, zodat ik alles kan doen wat ik wil. Neem gerust een kijkje in mijn portfolio, en bij interesse hoor ik graag van u. 
+                </p>
+            </div>
+            <div class="showcase block" id="showcase">
+                <h2>Portfolio</h2>
+                <ul>
+                    <li>
+                        <a href="https://automakelaar-zeeland.nl" target="_blank">
+                            <img src="https://automakelaar-zeeland.nl/favicon.ico">
+                            <span>Automakelaar Zeeland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://rage247.eu" target="_blank">
+                            <img src="https://rage247.eu/favicon.ico">
+                            <span>RAGE 247</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youngmessengerclub.com" target="_blank">
+                            <img src="ymcicon.jpg">
+                            <span>Young Messenger Club</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact block">
+                <h2>Contact</h2>
+                <div class="contact-block">
+                    <a href="mailto:thomas@westeridjk.eu">
+                        <i class="fas fa-envelope"></i>
+                        <span>thomas@westerdijk.eu</span>
+                    </a>
+                </div>
+                <div class="contact-block">
+                    <a href="tel:+31621262090">
+                        <i class="fas fa-phone"></i>
+                        <span>+31 6 21 26 20 90</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="right">
+
+    </div>
+    <script src="https://kit.fontawesome.com/7ad0e49df2.js" crossorigin="anonymous"></script>
+    <script>
+        const ageTag=document.getElementById("age");
+        let now = new Date();
+        let birth = new Date("01/02/2006");
+        let age = now.getFullYear() - birth.getFullYear();
+        var m = now.getMonth() - birth.getMonth();
+        if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) {
+            age--;
+        }
+        ageTag.innerHTML=age;
+        let tag = document.createElement("a");
+        tag.href="240322/index.php";
+        tag.target="_blank";
+        document.addEventListener("keypress", e => {
+            if(e.key == 'l') {
+                tag.click();
+            }
+        });
+    </script>
+</body>
+
+</html>

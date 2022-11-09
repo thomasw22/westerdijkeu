@@ -1,0 +1,80 @@
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    body {
+        /* display: none; */
+    }
+    .qlts {
+        perspective: unset;
+        transform: unset;
+    } .qlty-wrapper {
+        transform: unset;
+    }
+    .right {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        gap: 5px;
+    } .intro h1 {
+        text-align: center;
+        margin: 0px;
+        font-size: 30pt;
+    } .intro h2 {
+        font-size: 20pt;
+        text-align: center;
+    }
+    .block h2 {
+        font-size: 20pt;
+    }
+    .block p {
+        font-size: 15pt;
+    }
+    .showcase a {
+        font-size: 15pt;
+    } .showcase img {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-height: 800px) and (orientation: portrait) {
+    .right {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    .qlts {
+        perspective: unset;
+        transform: unset;
+    } .qlty-wrapper {
+        transform: unset;
+    } .showcase a {
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (max-width: 425px) and (orientation: portrait) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+        max-width: 100vh;
+        overflow-x: hidden;
+    }
+    .right {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    } .intro h1 {
+        font-size: 50pt;
+    } .expl p {
+        font-size: 15pt;
+        width: 90%;
+    } .block {
+        width: 100%;
+    } .abt p {
+        width: 90%;
+        font-size: 15pt;
+    }
+}

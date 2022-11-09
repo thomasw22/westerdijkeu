@@ -1,0 +1,265 @@
+:root {
+    /* --bgcolor: #302f2f; */
+    /* --bgcolor: #000000ea; */
+    --bgcolor: rgb(19, 21, 24);
+    --primary: rgba(255, 255, 255, 0.075);
+    --secondary: rgba(255, 255, 255, 0.123);
+    --sec-primary: rgba(75, 102, 255, 0.459);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgcolor);
+    color: white;
+    font-family: 'Roboto';
+}
+
+.left {
+    /* background-color: red; */
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+
+    scroll-behavior: smooth;
+}
+
+.left::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    width: 60%;
+    /* height: 150%; */
+    /* background-color: red; */
+    /* height: 270vh; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: max-content;
+    margin: 0px 0px 0px 30px;
+    padding: 30px;
+    color: rgb(173, 173, 173);
+}
+
+.top img {
+    width: 100px;
+}
+
+.intro {
+    /* background-color: yellow; */
+    width: 80%;
+    margin: 0px auto;
+}
+
+.intro h1 {
+    font-size: 60pt;
+}
+
+.intro h2 {
+    font-size: 30pt;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    background-image: url('pattern.png');
+    background-size: contain;
+    pointer-events: none;
+    box-shadow: inset 30px 3px 32px -18px var(--bgcolor);
+    z-index: 2;
+}
+
+.block {
+    background-color: var(--primary);
+}
+
+.block,
+.qlts {
+    width: 80%;
+    height: max-content;
+    /* left: 5%; */
+    padding: 20px 0px;
+    /* background-color: var(--primary); */
+    border-radius: 20px;
+}
+
+.block h2 {
+    text-align: center;
+    font-size: 35pt;
+}
+
+.expl {
+    /* top: 95vh; */
+    /* position: absolute; */
+}
+.expl h2 {
+    margin: 3px;
+}
+
+.expl p {
+    width: 80%;
+    margin: 0px auto;
+    font-size: 22pt;
+    color: rgb(189, 189, 189);
+}
+.cl {
+    /* color: var(--sec-primary); */
+    text-decoration: underline;
+    text-decoration-color: var(--sec-primary);
+    text-decoration-style: dotted;
+}
+
+.quick-showcase {
+    font-size: 22pt;
+    text-align: center;
+}
+.quick-showcase a {
+    color: white;
+    /* background-color: var(--sec-primary); */
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+.quick-showcase a:hover {
+    background-color: var(--sec-primary);
+}
+
+.abt {
+    /* top: 160vh; */
+    /* position: absolute; */
+}
+
+.abt h2 {
+    margin: 3px;
+}
+
+.showcase {
+    /* position: absolute; */
+    /* top: 190vh; */
+    text-align: center;
+}
+
+.showcase img {
+    width: 100px;
+}
+
+.showcase ul {
+    list-style: none;
+}
+
+.showcase a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20pt;
+    width: max-content;
+}
+
+.showcase span {
+    margin: 0px 0px 0px 40px;
+}
+
+.abt p {
+    width: 80%;
+    margin: 0px auto;
+    font-size: 22pt;
+    color: rgb(189, 189, 189);
+}
+
+.contact {
+    /* position: absolute; */
+    /* top: 235vh; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-block {
+    margin: 15px;
+    font-size: 20pt;
+}
+
+.contact-block a {
+    text-decoration: none;
+    color: white;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    /* transform: translateX(-75%); */
+    font-size: 60pt;
+    animation: 1s linear infinite alternate arrow;
+}
+
+.qlts {
+    width: 90%;
+    /* height: 400px; */
+    /* float: right; */
+    margin: -00px auto 0px;
+
+    perspective: 1000px;
+}
+
+.qlts:hover .qlty-wrapper {
+    transform: rotateY(0deg);
+}
+
+.qlts h1 {
+    text-align: center;
+    font-size: 40pt;
+}
+
+.qlty-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    transition: all .3s;
+    transform: rotateY(15deg) translateX(40px);
+}
+
+.qlty {
+    flex: 1 1 30%;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 100px;
+    display: grid;
+    align-content: center;
+    cursor: default;
+    transition: all 0.2s;
+}
+
+.qlty h3 {
+    font-weight: normal;
+    padding: 3px;
+    margin: 0;
+    font-size: 15pt;
+}
+
+.qlty i {
+    font-size: 30pt;
+}
+
+.qlty:hover {
+    background-color: var(--sec-primary);
+}
+
